@@ -11,7 +11,11 @@ namespace OdeToFood.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            var controller = RouteData.Values["controller"];
+            var action = RouteData.Values["action"];
+            var id = RouteData.Values["id"];
+
+            ViewBag.Message = string.Format("Controller: {0}, Action: {1}, id: {2}", controller, action, id);
 
             return View();
         }
