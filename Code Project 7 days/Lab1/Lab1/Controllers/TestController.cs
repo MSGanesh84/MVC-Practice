@@ -53,6 +53,55 @@ namespace Lab1.Controllers
         {
             return View("MyView");
         }
+
+        /// <summary>
+        /// Action Method refers to Shared View
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult GetSharedView()
+        {
+        return View("SharedView");
+        }
+
+        /// <summary>
+        /// Action method refers to multiple views
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult GetConditionalView()
+        {
+            //string country = "USA";
+            //string country = "Canada";
+            string country = "India";
+
+            if (country.Equals("USA"))
+            {
+                return View("USAView");
+            }
+            else if (country.Equals("Canada"))
+            {
+                return View("CanadaView");
+            }
+
+            return View("GetConditionalView");
+        }
+
+        /// <summary>
+        /// Action method retruns Content Result
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult GetContentResult()
+        {
+            return Content("This is from content.");
+        }
+
+        /// <summary>
+        /// Action method returns Default View
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult GetDefaultView()
+        {
+            return View();
+        }
     }   
 
     public class Customer

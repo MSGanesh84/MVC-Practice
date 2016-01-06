@@ -228,6 +228,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Test\MyView.cshtml" />
+    <Content Include="Views\Shared\SharedView.cshtml" />
+    <Content Include="Views\Test\USAView.cshtml" />
+    <Content Include="Views\Test\CanadaView.cshtml" />
+    <Content Include="Views\Test\GetConditionalView.cshtml" />
+    <Content Include="Views\Test\GetDefaultView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
