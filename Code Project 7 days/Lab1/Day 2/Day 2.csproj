@@ -229,6 +229,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Test\MyView.cshtml" />
+    <Content Include="Views\Test\MyViewWithViewBag.cshtml" />
+    <Content Include="Views\Test\StronglyTypedVIew.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

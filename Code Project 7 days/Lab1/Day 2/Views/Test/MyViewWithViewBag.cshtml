@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyViewWithViewBag</title>
+</head>
+<body>
+    <div>
+        @{
+            Day_2.Models.Employee emp = (Day_2.Models.Employee)ViewData["Employee"];
+        }
+        <b>Employee Details</b><br />
+        Employee Name: @(emp.FirstName + " " + emp.LastName) <br />
+        Employee Salary: @emp.Salary.ToString("C")
+    </div>
+</body>
+</html>
